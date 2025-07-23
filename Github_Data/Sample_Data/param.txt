@@ -1,0 +1,18 @@
+N = 256
+frames = 60000
+dt=0.5e-15
+mass=6.634e-26
+L = (N / 1.96e24)**(1/3)
+
+eps = 1.657e-21
+sig = 3.405e-10
+cutoff = 8.0 * sig
+skin = 1.0 * 3.405e-10
+min_dist = 3.5e-10
+T_init = 273
+eq_frames = 20000
+update_interval = 5
+
+ani = FuncAnimation(fig, update, frames=range(0, frames, 100), interval=50, blit=False)
+writer = FFMpegWriter(fps=100, codec='libx264', extra_args=['-pix_fmt', 'yuv420p'])
+

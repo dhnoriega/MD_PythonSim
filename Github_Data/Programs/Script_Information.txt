@@ -1,0 +1,13 @@
+MD_SIM_V5.py :  Molecular dynamics simulation script (initializes and runs simulation)
+
+MD_Post_Sim_Plotting.py :  Reads a number of runs and analyzes collective behavior
+	[SPECIFIC FOLDER STRUCTURE REQUIRED!]: Data_Set_X > GroupX > RunX
+	- For any set of runs you must place them into the same group folder,
+	  then all files associated with a single run in the group must be 
+	  sorted into folders {Run1, Run2, Run3, ... }.
+	***CHECK THAT FILE STRUCTURE NAMES AND PROGRAM NAMES MATCH***
+	- Any RunX file should contain each of: {all_vel.csv, energies.csv,
+	  positions_over_time.csv, temperatures.csv} all are required for 
+	  program to function, and all are automatically outputted by the 
+	  simulation script.
+	
