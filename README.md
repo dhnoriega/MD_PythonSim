@@ -18,7 +18,9 @@ ANALYSIS:
 The file tree should be as follows: **Simulation_Group > RunX > necessary files**
     
 **The necessary files include: {all_vel.csv, energies.csv, positions_over_time.csv, temperatures.csv}**
+
 The post sim analysis program will sort through the file tree of the entire group folder and turn csv files into npy files to manage RAM usage (files can get quite large)
+
 1. Files read and converted
 3. Data is preprocessed into arrays for averaging, averaged arrays are created
 4. Average position and velocity over all simulations is plotted
