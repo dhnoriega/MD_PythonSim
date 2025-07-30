@@ -16,12 +16,13 @@ ANALYSIS:
 
 !!!**DISCLAIMER**!!! ALL NECESSARY FILES MUST BE PLACED INTO A SPECIFIC STRUCURE IN ORDER TO FUNCTION
 The file tree should be as follows: **Simulation_Group > RunX > necessary files**
-    **The necessary files include: {all_vel.csv, energies.csv, positions_over_time.csv, temperatures.csv}**
+    
+**The necessary files include: {all_vel.csv, energies.csv, positions_over_time.csv, temperatures.csv}**
 The post sim analysis program will sort through the file tree of the entire group folder and turn csv files into npy files to manage RAM usage (files can get quite large)
 1. Files read and converted
-2. Data is preprocessed into arrays for averaging, averaged arrays are created
-3. Average position and velocity over all simulations is plotted
-4. Temperature Fluctuations are plotted
-5. Radial Distribution function is plotted (downsampled for efficiency)
-6. Mean Square displacement in plotted
-7. Kinetic energy distribution is plotted
+3. Data is preprocessed into arrays for averaging, averaged arrays are created
+4. Average position and velocity over all simulations is plotted
+5. Temperature Fluctuations are plotted
+6. Radial Distribution function is plotted (downsampled for efficiency)
+7. Mean Square displacement in plotted
+8. Kinetic energy distribution is plotted
